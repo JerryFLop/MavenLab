@@ -1,10 +1,11 @@
 package io.zipcoder.interfaces;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
-public class People {
+public class People implements Iterable {
 List<Person> personlist = new LinkedList<>();
 
   public void add(Person person){
@@ -58,8 +59,9 @@ public Person[] toArray(){
 }
 
 
-public Iterable<Person> iterable(){
-      return
+public Iterator<Person> iterator(){
+
+      return personlist.iterator();
 }
 
 
