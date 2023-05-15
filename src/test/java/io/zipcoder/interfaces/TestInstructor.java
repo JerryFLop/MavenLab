@@ -3,6 +3,8 @@ package io.zipcoder.interfaces;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+
 public class TestInstructor {
     @Test
     public void testImplementation(){
@@ -29,5 +31,31 @@ public class TestInstructor {
 
 
     }
+    @Test
+public void testLecture(){
+        double hours = 5.0;
+
+
+        Instructor instructor = new Instructor(123,"Angel");
+        Student student = new Student(100,"King neptune");
+        Student student2 = new Student(100,"leon");
+        Student student3 = new Student(100,"Dean");
+    Student[] studentsHours ={student,student2,student3};
+    instructor.lecture(studentsHours, hours );
+        double totalHours = hours/ studentsHours.length;
+
+       for(Student t : studentsHours  ) {
+
+           Assert.assertEquals(totalHours,t.getTotalStudyTime(), 0.0);
+
+       }
+
+
+
+}
+
+
+
+
 
 }
