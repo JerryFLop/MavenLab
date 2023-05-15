@@ -47,4 +47,34 @@ public void removeAll(){
 }
 
 
+public int count(){
+
+   return personlist.size();
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
