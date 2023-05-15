@@ -51,24 +51,16 @@ public int count(){
 
    return personlist.size();
 
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+public Person[] toArray(){
+      return personlist.toArray(new Person[0]);
 }
 
 
-
-
-
+public Iterable<Person> iterable(){
+      return
+}
 
 
 
