@@ -10,12 +10,12 @@ private double totalStudyTime;
 
     @Override
     public void learn(double numbersOfHours) {
-
+            totalStudyTime += numbersOfHours;
 
     }
 
     @Override
     public Double getTotalStudyTime() {
-        return null;
+        return totalStudyTime;
     }
 }
